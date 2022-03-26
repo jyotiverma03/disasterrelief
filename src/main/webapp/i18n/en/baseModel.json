@@ -1,0 +1,27 @@
+{
+  "disasterreliefApp": {
+    "baseModel": {
+      "home": {
+        "title": "Base Models",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Base Model",
+        "createOrEditLabel": "Create or edit a Base Model",
+        "notFound": "No Base Models found"
+      },
+      "created": "A new Base Model is created with identifier {{ param }}",
+      "updated": "A Base Model is updated with identifier {{ param }}",
+      "deleted": "A Base Model is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Base Model {{ id }}?"
+      },
+      "detail": {
+        "title": "Base Model"
+      },
+      "id": "Id",
+      "create": "Create",
+      "modified": "Modified",
+      "deleted": "Deleted",
+      "updated": "Updated"
+    }
+  }
+}

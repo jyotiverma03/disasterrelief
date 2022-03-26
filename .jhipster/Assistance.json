@@ -1,0 +1,31 @@
+{
+  "applications": ["disasterrelief"],
+  "changelogDate": "20220326132547",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "assistance",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Assistance",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "assistance",
+      "relationshipName": "assistance",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,28 @@
+{
+  "disasterreliefApp": {
+    "help": {
+      "home": {
+        "title": "Helps",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Help",
+        "createOrEditLabel": "Create or edit a Help",
+        "notFound": "No Helps found"
+      },
+      "created": "A new Help is created with identifier {{ param }}",
+      "updated": "A Help is updated with identifier {{ param }}",
+      "deleted": "A Help is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Help {{ id }}?"
+      },
+      "detail": {
+        "title": "Help"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "mobileNo": "Mobile No",
+      "helps": "Helps",
+      "helps": "Helps"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "disasterreliefApp": {
+    "BadgeLevel": {
+      "null": "",
+      "SILVER": "SILVER",
+      "GOLD": "GOLD",
+      "DIAMOND": "DIAMOND",
+      "PLATINUM": "PLATINUM"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "applications": ["disasterrelief"],
+  "changelogDate": "20220326132747",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "user_reward",
+  "fields": [
+    {
+      "fieldName": "rating",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "userId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "badgeLevel",
+      "fieldType": "BadgeLevel",
+      "fieldValues": "SILVER,GOLD,DIAMOND,PLATINUM"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UserReward",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

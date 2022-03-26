@@ -1,0 +1,36 @@
+{
+  "applications": ["disasterrelief"],
+  "changelogDate": "20220326132447",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "base_model",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "create",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "modified",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "deleted",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "updated",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "BaseModel",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

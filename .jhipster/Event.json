@@ -1,0 +1,32 @@
+{
+  "applications": ["disasterrelief"],
+  "changelogDate": "20220326132847",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "event",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "approved",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Event",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,15 @@
+{
+  "applications": ["disasterrelief"],
+  "changelogDate": "20220326132947",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "notification",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Notification",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

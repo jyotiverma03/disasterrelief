@@ -1,0 +1,109 @@
+application {
+  config {
+    baseName disasterrelief,
+    applicationType monolith,
+    authenticationType jwt,
+    buildTool gradle,
+    databaseType mongodb,
+    packageName com.clover.disasterrelief,
+    prodDatabaseType mongodb,
+    clientFramework react,
+    enableTranslation true,
+    nativeLanguage en,
+    languages [en]
+  }
+  entities *
+}
+
+deployment {
+  deploymentType docker-compose
+  dockerRepositoryName "alphabeta"
+  dockerPushCommand "docker push"
+}
+
+relationship ManyToOne {
+  Assistance{assistance} to User
+    Help{helps} to User
+    Help{helps} to Assistance
+} 
+
+entity BaseModel {
+  id String,
+    create Long,
+    modified Long,
+    deleted Long,
+    updated Boolean,
+}
+
+entity User {
+    firstName String required,
+    lastName String required,
+    phoneNo String required,
+    email String required,
+    role Role required,
+    userType UserType,
+    password String required,
+    occupation String,
+    notificationEnabled Boolean
+    //Current location
+    //Home location
+}
+
+entity Assistance {
+  name String,
+    description String
+}
+
+entity Address {
+  street1 String,
+    street2 String ,
+    city String,
+    state String,
+    pinCode String,
+    country String,
+    latitude String,
+    longitude String
+}
+
+entity UserReward { //Map to user
+  rating Integer,
+    userId String, //Object id
+    badgeLevel BadgeLevel
+}
+
+entity Event {
+  type String,
+  description String,
+    approved Boolean,
+    active Boolean
+    //Address
+    //user id
+}
+
+enum BadgeLevel {
+  SILVER, GOLD, DIAMOND, PLATINUM
+}
+
+enum Role {
+  USER,
+    ADMIN
+}
+
+enum UserType {
+  ORGANISATION,
+    VOLUNTEER,
+    INDIVIDUAL
+}
+
+entity Notification {
+  
+}
+
+entity Help {
+  firstName String required,
+    lastName String required,
+  mobileNo String
+}
+
+service all with serviceImpl
+paginate all with pagination   

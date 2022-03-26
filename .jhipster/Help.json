@@ -1,0 +1,43 @@
+{
+  "applications": ["disasterrelief"],
+  "changelogDate": "20220326133047",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "help",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "mobileNo",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Help",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "help",
+      "relationshipName": "helps",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "assistance",
+      "otherEntityRelationshipName": "help",
+      "relationshipName": "helps",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

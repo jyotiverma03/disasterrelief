@@ -1,0 +1,26 @@
+{
+  "disasterreliefApp": {
+    "assistance": {
+      "home": {
+        "title": "Assistances",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Assistance",
+        "createOrEditLabel": "Create or edit a Assistance",
+        "notFound": "No Assistances found"
+      },
+      "created": "A new Assistance is created with identifier {{ param }}",
+      "updated": "A Assistance is updated with identifier {{ param }}",
+      "deleted": "A Assistance is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Assistance {{ id }}?"
+      },
+      "detail": {
+        "title": "Assistance"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "assistance": "Assistance"
+    }
+  }
+}
